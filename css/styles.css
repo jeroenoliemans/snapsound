@@ -19,6 +19,12 @@ html, body{
   height: 300px;
   border-radius: 50%;
   background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.uploader input{
+  width: 200px;
 }
 
 .controlpanel{
