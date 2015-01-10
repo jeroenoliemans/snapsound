@@ -40,8 +40,20 @@ html, body{
   justify-content: flex-start;
   left: 5%;
   width: 90%;
+  text-align: center;
 }
 
+
+button{
+  background-color: #666;
+  color: #fff;
+  border: none;
+  height: 36px;
+  margin: 8px;
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+.btnRound{border-radius: 50%; width: 36px;}
 
 .img-canvas{
   background-color: #f00;

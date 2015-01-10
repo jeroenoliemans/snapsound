@@ -1,4 +1,4 @@
-define(function () {
+define(["app/globals"], function (globals) {
     //Do setup work here
     var canvas = document.querySelector('#canvas'),
     ctx = canvas.getContext("2d"),
@@ -11,6 +11,8 @@ define(function () {
             img.src = event.target.result;
             img.onload = function () {
               addImageToCanvas();
+              hideUploader();
+              showControls();
             }
           }
           reader.readAsDataURL(e.target.files[0]);
@@ -19,8 +21,11 @@ define(function () {
     addImageToCanvas = function(){
       ctx.drawImage(img,0,0,img.width,img.height,0,0,canvas.width,canvas.height);
     },
-    hideUploadControls = function(){
-
+    hideUploader = function(){
+      globals.uploader.style.display = 'none';
+    },
+    showControls = function(){
+      globals.controls.style.display = 'block';
     };
 
     return {
