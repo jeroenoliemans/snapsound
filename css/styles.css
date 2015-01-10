@@ -6,19 +6,22 @@ html, body{
 }
 
 .placeholder{
+  position: absolute;
   width: 100%;
   min-height: 100%;
-  background-color: #000;
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
+  top: 0px;
 }
 
 .uploader{
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  background-color: #ccc;
+  border: 5px solid #fff;
+  background-color: rgba(255,255,255,0.7);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,8 +35,16 @@ html, body{
   bottom: 5%;
   height: 50px;
   border-radius: 25px;
-  background-color: #ccc;
+  border: 5px solid #fff;
+  background-color: rgba(255,255,255,0.7);
   justify-content: flex-start;
   left: 5%;
   width: 90%;
+}
+
+
+.img-canvas{
+  background-color: #f00;
+  width: 100%;
+  height: 100%;
 }
